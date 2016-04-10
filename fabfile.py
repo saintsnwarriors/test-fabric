@@ -8,3 +8,8 @@ def commit():
 
 def push():
   local("git push origin master")
+
+def deploy():
+  test()
+  commit()
+  push()
